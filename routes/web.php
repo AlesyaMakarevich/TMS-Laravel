@@ -7,6 +7,8 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +29,8 @@ Route::get('/checkout', [CheckoutController::class, 'checkout'])->name('checkout
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/blog', [BlogController::class, 'blog'])->name('blog');
+Route::get('/product_list', [ProductListController::class, 'product_list'])->name('product_list');
+Route::get('/product', [ProductController::class, 'product'])->name('product');
+
+
+

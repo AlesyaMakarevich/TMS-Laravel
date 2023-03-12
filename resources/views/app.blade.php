@@ -44,8 +44,8 @@
                                     product
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                    <a class="dropdown-item" href="product_list.html"> product list</a>
-                                    <a class="dropdown-item" href="single-product.html">product details</a>
+                                    <a class="dropdown-item" href="{{ asset("product_list") }}"> product list</a>
+                                    <a class="dropdown-item" href="{{ asset("product") }}">product details</a>
 
                                 </div>
                             </li>
@@ -112,7 +112,7 @@
                         <div class="footer_menu_item">
                             <a href="{{ asset(" ") }}">Home</a>
                             <a href="{{ asset("about") }}">About</a>
-                            <a href="product_list.html">Products</a>
+                            <a href="{{ asset("product_list") }}">Products</a>
                             <a href="#">Pages</a>
                             <a href="{{ asset("blog") }}">Blog</a>
                             <a href="{{ asset("contact") }}">Contact</a>
